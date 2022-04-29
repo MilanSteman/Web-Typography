@@ -1,0 +1,480 @@
+@charset "UTF-8";
+@import "../util/mixins/mixins", "../util/variables/variables";
+
+/* **********************************************
+Sounds.
+	You can style the whole body, or you can 
+	style anything within the body the moment
+	a sound starts.
+*********************************************  */
+
+/* The moment the class .sound1 is added to the body, the background is yellow */
+body {
+    background-color: black;
+}
+
+body.sound1 .sound1Background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-image: url(https://scitechdaily.com/images/Small-Semiconductor-Laser-Concept.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: difference;
+    animation: hide 1.5s forwards;
+}
+
+body.sound4 .sound4Background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(https://media4.giphy.com/media/3o6gbcjYiGrpaLXy7K/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: difference;
+    animation: hide 2.5s forwards;
+    z-index: -1;
+}
+
+body.sound4 iframe {
+    animation: shake 0.5s 4 ease-in-out;
+}
+
+body.sound6 .sound6Background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-image: url(https://media4.giphy.com/media/3o6gbcjYiGrpaLXy7K/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: difference;
+    animation: hide 2.5s forwards;
+}
+
+body.sound6 iframe {
+    animation: shake2 0.5s 4 ease-in-out;
+}
+
+body.sound7 .sound7Background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-image: url(https://media4.giphy.com/media/3o6gbcjYiGrpaLXy7K/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: difference;
+    animation: hide 2.5s forwards;
+}
+
+body.sound7 iframe {
+    animation: shake3 0.5s 4 ease-in-out;
+    background-color: #a9b29e;
+}
+
+body.sound9 {
+    background-color: #a9b29e;
+}
+
+body.sound9 p,
+body.sound9 span {
+    color: black;
+}
+
+body.sound12 iframe {
+    background-color: #6f7872;
+}
+
+body.sound10 iframe {
+    animation: shake 1s 5 forwards;
+}
+
+body.sound11 iframe {
+    animation: shake2 0.5s 10 forwards;
+}
+
+body.sound9 .sound11Background {
+    width: 750px;
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 18px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 36px;
+    z-index: 1000;
+    background-image: url(https://i.pinimg.com/originals/94/8e/31/948e31d8046c8b13f52afe071c19b756.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: difference;
+    animation: hide3 44s forwards;
+}
+
+body.sound13 iframe {
+    animation: shake5 0.4s 5 ease-in-out;
+}
+
+body.sound13 .sound13Background {
+    width: 750px;
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 18px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 36px;
+    z-index: 1000;
+    background-image: url(https://i.pinimg.com/originals/94/8e/31/948e31d8046c8b13f52afe071c19b756.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: difference;
+    animation: hide4 2s forwards;
+    transition: none;
+}
+
+body.sound14 iframe {
+    animation: shake6 0.5s 2 ease-in-out;
+}
+
+body.sound14 .sound14Background {
+    width: 750px;
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 18px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 36px;
+    z-index: 1000;
+    background-image: url(https://i.pinimg.com/originals/94/8e/31/948e31d8046c8b13f52afe071c19b756.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: difference;
+    animation: hide4 1s forwards;
+    transition: none;
+}
+
+
+body.sound15 {
+    background-color: black;
+}
+
+body.sound15 .voice4 span {
+    color: white !important;
+}
+
+@keyframes hide4 {
+    0% {
+        opacity: 0;
+    }
+    12% {
+        opacity: 0.15;
+    }
+    25% {
+        opacity: 0.2;
+    }
+    37% {
+        opacity: 0.15;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    62% {
+        opacity: 0.15;
+    }
+    75% {
+        opacity: 0.2;
+    }
+    87% {
+        opacity: 0.15;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes hide3 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    62% {
+        opacity: 0.15;
+    }
+    75% {
+        opacity: 0.3;
+    }
+    87% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes hide2 {
+    0% {
+        opacity: 0;
+    }
+    62% {
+        opacity: 0;
+    }
+    87% {
+        opacity: 0.15;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes shake4 {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@keyframes hide {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes shake3 {
+    0% {
+        transform: translate(5px, 5px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-5px, -10px) rotate(-5deg);
+    }
+    20% {
+        transform: translate(-15px, 0px) rotate(5deg);
+    }
+    30% {
+        transform: translate(15px, 10px) rotate(0deg);
+    }
+    40% {
+        transform: translate(5px, -5px) rotate(5deg);
+    }
+    50% {
+        transform: translate(-5px, 10px) rotate(-5deg);
+    }
+    60% {
+        transform: translate(-15px, 5px) rotate(0deg);
+    }
+    70% {
+        transform: translate(15px, 5px) rotate(-5deg);
+    }
+    80% {
+        transform: translate(-5px, -5px) rotate(5deg);
+    }
+    90% {
+        transform: translate(5px, 10px) rotate(0deg);
+    }
+    100% {
+        transform: translate(5px, -10px) rotate(-5deg);
+    }
+}
+
+@keyframes shake5 {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+@keyframes shake6 {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+
+@keyframes shake2 {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+// https://media4.giphy.com/media/3o6gbcjYiGrpaLXy7K/giphy.gif
+
+iframe {
+    transition: 1s;
+}
+/* The moment the class .sound1 is added to the body, the movie makes a turn */
+// .sound1 iframe {
+//     transform: rotate(1turn);
+// }

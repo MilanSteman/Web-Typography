@@ -1,0 +1,27 @@
+@mixin Brenner($family, $weight, $italic) {
+    
+    @if $family == "Default" {
+        font-family: "Brenner";
+    } @else if $family == "Display" {
+        font-family: "Brenner Display Black";
+    } @else if $family == "Script" {
+        font-family: "Brenner Script";
+    } @else if $family == "Mono" {
+        font-family: "Brenner Mono";
+        letter-spacing: -2px;
+    } @else if $family == "Sans" {
+        font-family: "Brenner Sans";
+    } @else if $family == "Sans Condensed" {
+        font-family: "Brenner Sans Condensed";
+    } @else if $family == "Slab" {
+        font-family: "Brenner Slab";
+    } @else { // Fallback to default font
+        font-family: "Brenner";
+    }
+
+    font-weight: $weight;
+
+    @if $italic {
+        font-style: italic;
+    }
+}

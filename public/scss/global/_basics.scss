@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import "../util/mixins/mixins", "../util/variables/variables";
+
+/* **********************************************
+Basic mechanics
+Hide all paragraphs by default
+Show them when they receive the class 'on'
+Hide them when they receive the class 'off'
+Feel free to adjust the defaults to your needs.
+********************************************** */
+
+#closed-captions p {
+    opacity: 0;
+    transition: 0.05s;
+    position: absolute;
+}
+#closed-captions .on {
+    opacity: 1;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#closed-captions .off {
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.voice1 {
+    @include Brenner("Mono", 400, false);
+    text-shadow: 0px 0px 4px rgb(42, 95, 109);
+}
+
+.voice2 {
+    @include Brenner("Sans", 400, false);
+}
+
+.voice3 {
+    @include Brenner("Sans Condensed", 800, true);
+    text-transform: uppercase;
+    top: 50%;
+    left: 30%!important;
+}
+
+.voice3.on {
+    animation: hideVoice3 1s forwards;
+}
+
+@keyframes hideVoice3 {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.voice3 span {
+    color: orangered!important;
+}
+
+.voice4 {
+    @include Brenner("Mono", 200, false);
+    text-shadow: 0px 0px 4px rgb(255, 255, 255);
+}

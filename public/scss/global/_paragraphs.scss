@@ -1,0 +1,781 @@
+@charset "UTF-8";
+@import "../util/mixins/mixins", "../util/variables/variables";
+
+/* **********************************************
+The first paragraph, with extended timing for 
+	all siblings. Basically what it does is that
+	it shows the text after a delay, which 
+	corresponds with the time that the word is
+	spoken.
+You probably want to change the styling.
+********************************************** */
+.p0 span {
+    opacity: 0;
+}
+
+.p0.on span:first-of-type {
+    opacity: 1;
+}
+
+.p0.on span:nth-of-type(2) {
+    opacity: 1;
+    margin-right: -0.25em;
+    font-weight: bold;
+}
+
+.p0.on span:nth-of-type(3) {
+    opacity: 1;
+}
+
+.p0.on span:nth-of-type(4) {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.p0.on span:nth-of-type(5) {
+    opacity: 1;
+    font-style: italic;
+}
+
+.p2.on span:nth-of-type(3) {
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.p2.on span:nth-of-type(3)::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: white;
+    height: 0.125rem;
+    animation: slide-in 0.5s 0.5s forwards;
+}
+
+@keyframes slide-in {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+// Paragraph 3
+.p3 span {
+    opacity: 0;
+}
+
+.p3.on span:nth-of-type(1) {
+    opacity: 1;
+}
+
+.p3.on span:nth-of-type(2) {
+    color: red;
+    opacity: 1;
+    transition: 0s 0.4s;
+}
+
+.p3.on span:nth-of-type(3) {
+    opacity: 0.4;
+    transition: 0s 0.8s;
+}
+
+.p3.on span:nth-of-type(4) {
+    opacity: 1;
+    transition: 0s 1.3s;
+}
+
+.p3.on span:nth-of-type(5) {
+    opacity: 1;
+    transition: 0s 1.5s;
+}
+
+.p3.on span:nth-of-type(6) {
+    opacity: 1;
+    transition: 1s 2s;
+    display: inline-block;
+    transform: rotate(1turn);
+}
+
+// Paragraph 4
+.p4 span {
+    opacity: 0;
+}
+.p4.on span:nth-of-type(1) {
+    opacity: 1;
+    transition: 0s;
+}
+
+.p4.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s 0.4s;
+}
+
+.p4.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s 0.65s;
+}
+
+.p4.on span:nth-of-type(4) {
+    opacity: 1;
+    transition: 0s 0.9s;
+}
+
+.p4.on span:nth-of-type(5) {
+    opacity: 1;
+    transition: 0s 1.1s;
+}
+
+.p4.on span:nth-of-type(6) {
+    opacity: 1;
+    transition: 0s 1.4s;
+}
+
+.p4.on span:nth-of-type(7) {
+    opacity: 1;
+    transition: 0s 1.7s;
+}
+
+// Paragraph 5
+.p5 span {
+    opacity: 0;
+}
+.p5.on span:nth-of-type(1) {
+    opacity: 1;
+    transition: 0s;
+}
+
+.p5.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s 0.4s;
+}
+
+.p5.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s 0.65s;
+}
+
+.p5.on span:nth-of-type(4) {
+    opacity: 1;
+    transition: 0s 1s;
+}
+
+.p5.on span:nth-of-type(5) {
+    opacity: 1;
+    transition: 0s 1.7s;
+}
+
+.p5.on span:nth-of-type(6) {
+    opacity: 1;
+    transition: 0s 2s;
+}
+
+.p5.on span:nth-of-type(7) {
+    opacity: 1;
+    transition: 0s 2.2s;
+}
+
+// Paragraph 7
+.p7 span {
+    opacity: 0;
+}
+
+.p7.on span:nth-of-type(1) {
+    opacity: 1;
+}
+
+.p7.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s 0.35s;
+}
+
+.p7.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s 0.7s;
+}
+
+.p7.on span:nth-of-type(4) {
+    opacity: 1;
+    transition: 0s 1.2s;
+}
+
+.p7.on span:nth-of-type(5) {
+    opacity: 1;
+    transition: 0s 1.4s;
+}
+
+.p7.on span:nth-of-type(6) {
+    opacity: 1;
+    transition: 0s 1.6s;
+    opacity: 0.4;
+}
+
+.p7.on span:nth-of-type(7) {
+    opacity: 1;
+    transition: 0s 2.6s;
+    opacity: 1;
+}
+
+.p7.on span:nth-of-type(8) {
+    opacity: 1;
+    transition: 0s 2.9s;
+    opacity: 1;
+}
+
+.p7.on span:nth-of-type(9) {
+    opacity: 1;
+    transition: 0s 3.1s;
+    opacity: 1;
+}
+
+.p7.on span:nth-of-type(10) {
+    opacity: 1;
+    transition: 0s 3.3s;
+    opacity: 1;
+}
+
+.p7.on span:nth-of-type(11) {
+    opacity: 1;
+    transition: 0s 3.5s;
+    opacity: 1;
+}
+
+// Tall white fountain
+.p7.on span:nth-of-type(8),
+.p7.on span:nth-of-type(9),
+.p7.on span:nth-of-type(10) {
+    font-size: 2rem;
+}
+
+.p77.on span:nth-of-type(2),
+.p77.on span:nth-of-type(3),
+.p77.on span:nth-of-type(4),
+.p78.on span:nth-of-type(3),
+.p78.on span:nth-of-type(4),
+.p78.on span:nth-of-type(5) {
+    font-size: 2rem;
+}
+
+.p9.on span:nth-of-type(1) {
+    border: 1px solid black !important;
+}
+
+// Cells
+.p4.on span:nth-of-type(4),
+.p4.on span:nth-of-type(7),
+.p5.on span:nth-of-type(3),
+.p8.on span:nth-of-type(1),
+.p9.on span:nth-of-type(1) {
+    border: 1px solid white;
+    padding: 0.5rem;
+}
+.p8.on span:nth-of-type(1),
+.p9.on span:nth-of-type(1) {
+    transition: none;
+}
+
+.p11.on span:nth-of-type(1),
+.p12.on span:nth-of-type(1),
+.p13.on span:nth-of-type(7),
+.p14.on span:nth-of-type(1),
+.p14.on span:nth-of-type(1),
+.p15.on span:nth-of-type(1),
+.p16.on span:nth-of-type(14),
+.p17.on span:nth-of-type(1),
+.p18.on span:nth-of-type(1),
+.p38.on span:nth-of-type(2),
+.p39.on span:nth-of-type(2),
+.p40.on span:nth-of-type(9),
+.p41.on span:nth-of-type(2),
+.p42.on span:nth-of-type(2),
+.p43.on span:nth-of-type(2) {
+    padding: 0.5rem;
+    border: 1px solid black;
+    transition: none;
+}
+
+// Little box
+.p16.on span:nth-of-type(13),
+.p16.on span:nth-of-type(14) {
+    font-size: 1rem;
+    transition: none;
+}
+
+// ... Interlinked
+.p20.on span {
+    font-style: italic;
+    transition: none;
+    font-size: 1rem;
+}
+
+// Love
+.p21.on span:nth-of-type(11) {
+    color: red;
+    @include Brenner("Script", 400, false);
+}
+
+// Heart
+.p27.on span:nth-of-type(7) {
+    color: red;
+}
+
+// Interlinked
+.p31.on span {
+    font-style: italic;
+    transition: none;
+}
+
+// Missing
+.p35.on span:nth-of-type(11) {
+    opacity: 0.4;
+}
+
+// Cells interlinked
+.p38 span {
+    opacity: 0;
+}
+
+.p38.on span:nth-of-type(1) {
+    opacity: 1;
+    transition: 0s 0s;
+}
+
+.p38.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s 0.4s;
+}
+
+.p38.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s 0.6s;
+}
+
+.p39 span {
+    opacity: 0;
+}
+
+.p39.on span:nth-of-type(1) {
+    opacity: 1;
+    transition: 0s 0s;
+}
+
+.p39.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s 0.4s;
+}
+
+.p39.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s 0.6s;
+}
+
+// 3 times...
+.p41 span,
+.p42 span,
+.p43 span {
+    opacity: 0;
+}
+
+.p42 span {
+    font-size: 1.75rem;
+}
+
+.p43 span {
+    font-size: 2rem;
+}
+
+.p41.on span:nth-of-type(1),
+.p42.on span:nth-of-type(1),
+.p43.on span:nth-of-type(1) {
+    opacity: 1;
+    transition: 0s !important;
+}
+
+.p41.on span:nth-of-type(2),
+.p42.on span:nth-of-type(2),
+.p43.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s 0.55s !important;
+}
+
+.p41.on span:nth-of-type(3),
+.p42.on span:nth-of-type(3),
+.p43.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s 1s !important;
+}
+
+// Pick up your bonus
+.p46.on span:nth-of-type(6) {
+    @include Brenner("Script", 400, false);
+    letter-spacing: -2px;
+    transition: none;
+}
+
+// Little Box 2
+.p52.on span:nth-of-type(13),
+.p52.on span:nth-of-type(14) {
+    font-size: 1rem;
+    transition: none;
+}
+
+.p52.on span:nth-of-type(14) {
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+// Someone you love
+.p54.on span:not(:first-of-type) {
+    font-style: italic;
+}
+
+.p54.on span:nth-of-type(12) {
+    color: red;
+    @include Brenner("Script", 400, false);
+    letter-spacing: -2px;
+}
+
+// Not even close
+.p79.on span:nth-of-type(2) {
+    text-transform: uppercase;
+    color: red !important;
+    font-weight: bold;
+}
+
+.p79.on span:nth-of-type(6) {
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.p79.on span:nth-of-type(6)::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: white;
+    height: 0.125rem;
+    animation: slide-in 0.5s 0.5s forwards;
+}
+
+// Cells 2nd test
+.p48.on span,
+.p49.on span,
+.p50.on span:last-of-type,
+.p51.on span,
+.p52.on span:last-of-type,
+.p53.on span,
+.p57.on span:nth-of-type(2),
+.p58.on span:nth-of-type(2),
+.p69.on span:nth-of-type(2),
+.p70.on span:nth-of-type(2) {
+    padding: 0.5rem;
+    border: 1px solid black;
+    transition: none;
+}
+
+.p61.on span:not(:last-of-type) {
+    font-style: italic;
+}
+
+// Seperated
+.p63.on span:nth-of-type(5) {
+    letter-spacing: 2px;
+}
+
+// Dreadfully distinct
+.p65 span {
+    opacity: 0;
+}
+
+.p65.on span:nth-of-type(1) {
+    opacity: 1;
+    transition: 0s 0s;
+}
+
+.p65.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s .4s;
+}
+
+.p66 span {
+    opacity: 0;
+}
+
+.p66.on span:nth-of-type(1) {
+    opacity: 1;
+    transition: 0s 0s;
+}
+
+.p66.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s .4s;
+}
+
+.p73 span {
+    opacity: 0;
+}
+
+.p73.on span:nth-of-type(1) {
+    opacity: 1;
+    transition: 0s 0s;
+}
+
+.p73.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s 0.4s;
+}
+
+.p73.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s 0.6s;
+}
+
+.p74 span {
+    opacity: 0;
+}
+
+.p74.on span:nth-of-type(1) {
+    opacity: 1;
+    transition: 0s 0s;
+}
+
+.p74.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s 0.4s;
+}
+
+.p74.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s 0.6s;
+}
+
+
+// Herhaling vanaf 57
+.p57 span {
+    opacity: 0;
+}
+
+.p57.on span:nth-of-type(1) {
+    opacity: 1;
+    transition: 0s 0s;
+}
+
+.p57.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s 0.4s;
+}
+
+.p57.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s 0.6s;
+}
+
+.p58 span {
+    opacity: 0;
+}
+
+.p58.on span:nth-of-type(1) {
+    opacity: 1;
+    transition: 0s 0s;
+}
+
+.p58.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s 0.4s;
+}
+
+.p58.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s 0.6s;
+}
+
+.p69 span {
+    opacity: 0;
+}
+
+.p69.on span:nth-of-type(1) {
+    opacity: 1;
+    transition: 0s 0s;
+}
+
+.p69.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s 0.4s;
+}
+
+.p69.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s 0.6s;
+}
+
+.p70 span {
+    opacity: 0;
+}
+
+.p70.on span:nth-of-type(1) {
+    opacity: 1;
+    transition: 0s 0s;
+}
+
+.p70.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s 0.4s;
+}
+
+.p70.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s 0.6s;
+}
+
+// Within one stem
+.p71 span {
+    opacity: 0;
+}
+
+.p71.on span:nth-of-type(1) {
+    opacity: 1;
+    transition: 0s 0s;
+}
+
+.p71.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s 0.4s;
+}
+
+.p71.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s 0.6s;
+}
+
+.p72 span {
+    opacity: 0;
+    font-style: italic;
+}
+
+.p72.on span:nth-of-type(1) {
+    opacity: 1;
+    transition: 0s 0s;
+}
+
+.p72.on span:nth-of-type(2) {
+    opacity: 1;
+    transition: 0s 0.4s;
+}
+
+.p72.on span:nth-of-type(3) {
+    opacity: 1;
+    transition: 0s 0.6s;
+}
+
+// Dark 2nd test
+.p67.on span,
+.p68.on span {
+    opacity: 0.4;
+    transition: none;
+}
+
+.p75 span {
+    opacity: 0;
+}
+
+.p75.on span:nth-of-type(1) {
+    opacity: 0.4;
+    transition: 0s 0s;
+}
+
+.p75.on span:nth-of-type(2) {
+    opacity: 0.4;
+    transition: 0s 0.15s;
+}
+
+.p75.on span:nth-of-type(3) {
+    opacity: 0.4;
+    transition: 0s 0.3s;
+}
+
+.p76 span {
+    opacity: 0;
+}
+
+.p76.on span:nth-of-type(1) {
+    opacity: 0.4;
+    transition: 0s 0s;
+}
+
+.p76.on span:nth-of-type(2) {
+    opacity: 0.4;
+    transition: 0s 0.15s;
+}
+
+.p76.on span:nth-of-type(3) {
+    opacity: 0.4;
+    transition: 0s 0.3s;
+}
+
+// A tall white fountain played
+
+.p77 span {
+    opacity: 0;
+}
+
+.p77.on span:nth-of-type(1) {
+    opacity: 0.4;
+    transition: 0s 0s;
+}
+
+.p77.on span:nth-of-type(2) {
+    opacity: 0.4;
+    transition: 0s 0.15s;
+}
+
+.p77.on span:nth-of-type(3) {
+    opacity: 0.4;
+    transition: 0s 0.3s;
+}
+
+.p77.on span:nth-of-type(4) {
+    opacity: 0.4;
+    transition: 0s 0.6s;
+}
+
+.p77.on span:nth-of-type(5) {
+    opacity: 0.4;
+    transition: 0s 1s;
+}
+
+.p78 span {
+    opacity: 0;
+}
+
+.p78.on span:nth-of-type(1) {
+    opacity: 0.4;
+    transition: 0s 0s;
+}
+
+.p78.on span:nth-of-type(2) {
+    opacity: 0.4;
+    transition: 0s 0s;
+}
+
+.p78.on span:nth-of-type(3) {
+    opacity: 0.4;
+    transition: 0s 0.15s;
+}
+
+.p78.on span:nth-of-type(4) {
+    opacity: 0.4;
+    transition: 0s 0.3s;
+}
+
+.p78.on span:nth-of-type(5) {
+    opacity: 0.4;
+    transition: 0s 0.6s;
+}
+
+.p78.on span:nth-of-type(6) {
+    opacity: 0.4;
+    transition: 0s 1s;
+}

@@ -1,0 +1,31 @@
+// Background & global elements
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    transition: .5s;
+}
+
+p {
+    @include Brenner("Default", 400, false);
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+// Container
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    #video-placeholder {
+        margin-bottom: 2rem;
+        mix-blend-mode: difference;
+    }
+}
